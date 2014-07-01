@@ -1,0 +1,36 @@
+$bank-sprite-dimensions: true;
+$bank-spacing: 1px;
+@import "sprite/bank/*.png";
+@include all-bank-sprites;
+
+.ui-bank {
+  padding: 25px;
+  background-color: #e5f5ff;
+  border-width: 1px 0;
+  border-style: dashed;
+  border-color: #ddd9c0;
+  ul {
+    font-size: 0;
+    margin-left: -10px;
+    margin-bottom: -25px;
+  }
+  li {
+    @include inline-block;
+    margin-left: 30px;
+    margin-bottom: 25px;
+  }
+  .bank-radio {
+    @include inline-block;
+    margin-right: 10px;
+  }
+  .bank-logo {
+    @include inline-block;
+    border: 1px solid #ddd;
+    background-color: #fff;
+  }
+  .active {
+    .bank-logo {
+      border-color: #33a1ff;
+    }
+  }
+}

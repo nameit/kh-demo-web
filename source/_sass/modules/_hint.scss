@@ -1,0 +1,23 @@
+.ui-hint {
+  margin-top: 20px;
+  padding: 30px 40px;
+  background-color: $content-color;
+  .title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: $heading-blue;
+  }
+  .hints {
+    margin: 0 20px;
+    list-style: square outside;
+    line-height: 20px;
+    li {
+      margin-bottom: 5px;
+      font-size: $hint-font-size;
+      img {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  }
+}

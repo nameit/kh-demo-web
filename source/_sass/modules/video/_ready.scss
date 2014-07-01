@@ -1,0 +1,91 @@
+.video-ready {
+  width: 680px;
+  height: 400px;
+  margin: 10px auto 0;
+  text-align: center;
+  @include border-radius(8px);
+  border: 1px solid $ready-bd-color;
+  background-color: $ready-bg-color;
+}
+
+.video-detect-hardware {
+  position: relative;
+  height: 200px;
+  table {
+    position: relative;
+    top: 50px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  th {
+    height: 30px;
+    line-height: 30px;
+    font-size: $h3-size;
+    text-align: center;
+  }
+  td {
+    text-align: center;
+  }
+  .hardware {
+    position: relative;
+    @include inline-block;
+    .icon {
+      position: absolute;
+      right: -10px;
+      bottom: -10px;
+    }
+  }
+}
+
+.video-prepare-text {
+  margin-top: 40px;
+  font-size: $h1-size;
+}
+
+.video-prepare-icon {
+  height: 200px;
+  background: image-url('prepare/videochat.png') no-repeat 50% 50%;
+}
+
+.video-waiting {
+  height: 170px;
+  margin-top: 65px;
+  background: image-url('gif/waiting.gif') no-repeat 50% 50%;
+}
+
+.video-tip {
+  padding: 18px 50px;
+  zoom: 1;
+  font-size: $h4-size;
+  font-family: $heading-font;
+  color: $video-tip-color;
+  border: 1px solid $video-tip-bd-color;
+  background-color: $video-tip-bg-color;
+}
+
+.video-queue-text {
+  position: relative;
+  top: -20px;
+  font-size: $h3-size;
+  font-family: $heading-font;
+  color: $video-tip-color;
+  .num {
+    padding: 0 5px;
+    font-family: $heading-font;
+    font-size: $queue-num-size;
+    font-weight: bold;
+    font-style: italic;
+    color: $queue-num-color;
+  }
+}
+
+.video-controll {
+  padding: 7px 14px;
+  border: 1px solid $video-tip-bd-color;
+  background-color: lighten($video-tip-bd-color, 8%);
+  @include border-radius(3px);
+  cursor: pointer;
+  &:hover {
+    background-color: $video-tip-bd-color;
+  }
+}

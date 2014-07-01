@@ -1,0 +1,65 @@
+.page-depository {
+  .wrap {
+    width: 760px;
+    margin: 0 auto;
+  }
+  .ui-tab {
+    margin-bottom: 20px;
+  }
+  .ui-bank {
+    ul {
+      margin-left: -10px;
+    }
+    li {
+      margin-left: 30px;
+    }
+  }
+  .assist {
+    margin-bottom: 20px;
+    font-size: $small-font-size;
+    .icon {
+      margin-right: 5px;
+    }
+  }
+  .selected {
+    @include pie-clearfix;
+    margin-top: 30px;
+    .bank-logo {
+      float: left;
+      margin-left: 30px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+    }
+  }
+  .holder-text {
+    float: left;
+    width: 70px;
+    padding-top: 10px;
+  }
+  .fill-label {
+    width: 70px;
+  }
+  .ui-divider {
+    margin: 20px 0 30px;
+  }
+  .ui-agree {
+    margin-left: 100px;
+  }
+  .fill-group {
+    position: relative;
+  }
+}
+
+#zoomIn {
+  position: absolute;
+  z-index: 99;
+  top: -71px;
+  left: 104px;
+  display: block;
+  padding: 15px 30px;
+  border: 1px solid #c5c0aa;
+  background-color: #fff;
+  font-family: $heading-font;
+  font-size: 27px;
+  color: #e2693d;
+}

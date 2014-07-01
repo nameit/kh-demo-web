@@ -1,0 +1,48 @@
+---
+layout: progress
+class: depository
+title: 指定存管银行
+step: 2
+---
+
+<div id="content">
+	<div class="wrap">
+		<div class="ui-tab">
+			<span class="tab active">快捷签约<em class="arrow-down">◆</em></span>
+			<span class="tab">网银签约<em class="arrow-down">◆</em></span>
+		</div>
+		<div class="ui-tab-content">
+			<p class="assist"><i class="icon icon-info"></i>选择该类银行，只要您提供该类银行本人名下的银行卡号并正确输入银行卡取款密码（中国银行为电话银行密码），便可完成三方存管签约。</p>
+			{% include modules/bank.liquid %}
+		</div>
+		<div class="ui-tab-content" style="display: none;">
+			{% include modules/bank.liquid %}
+		</div>
+		<div id="extra" style="display: none;">
+			<div class="selected">
+				<span class="holder-text">您选择的是</span>
+				<span id="holder"></span>
+			</div>
+			<div class="ui-divider divider-dot"></div>
+			<div id="extraFiller">
+				<div class="fill-group">
+					<label for="cardNo" class="fill-label">银行卡账号</label>
+					<div class="fill-control">
+						<input type="text" class="fill-input" id="cardNo" maxlength="16">
+						<span id="zoomIn" style="display: none;"></span>
+					</div>
+				</div>
+				<div class="fill-group">
+					<label for="cardPSW" class="fill-label">银行卡密码</label>
+					<div class="fill-control">
+						<input type="password" class="fill-input" id="cardPSW">
+					</div>
+				</div>
+			</div>
+			{% include modules/agree.liquid content="我已阅读并同意<a href='#'>《证券公司客户交易结算资金第三方存管业务三方协议》</a>" id="agree" %}
+		</div>
+
+		<!-- 下一步 -->
+		{% include modules/jump.liquid %}
+	</div>
+</div>

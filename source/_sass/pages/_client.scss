@@ -1,0 +1,164 @@
+$misc-sprite-dimensions: true;
+$misc-spacing: 3px;
+@import "sprite/misc/*.png";
+@include all-misc-sprites;
+
+.page-client {
+  background-color: #fff;
+  .banner {
+    position: relative;
+    top: -15px;
+    z-index: 9;
+    height: 459px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    .inner {
+      position: relative;
+      width: 950px;
+      margin: 0 auto;
+      padding-top: 250px;
+    }
+    .clearfix {
+      @include pie-clearfix;
+    }
+    .download {
+      @include float(left);
+      margin-right: 12px;
+      a {
+        display: block;
+        text-indent: -9999px;
+        overflow: hidden;
+      }
+      .ios {
+        @include misc-sprite(download-ios);
+        margin-bottom: 10px;
+      }
+      .android {
+        @include misc-sprite(download-android);
+      }
+    }
+    .qrcode {
+      @include float(left);
+    }
+  }
+  .pc-link {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+  .col {
+    @include pie-clearfix;
+    border-bottom: 1px solid #7f7f7f;
+    .l {
+      @include float(left);
+      padding-left: 50px;
+      padding-right: 20px;
+      width: 400px;
+    }
+    .r {
+      @include float(right);
+      padding-left: 20px;
+      padding-right: 40px;
+      width: 320px;
+    }
+    h2 {
+      padding-top: 75px;
+      margin-bottom: 15px;
+      font-family: $heading-font;
+      font-size: 36px;
+      line-height: 40px;
+      color: #48484c;
+      .icon {
+        margin-left: 10px;
+      }
+    }
+    p {
+      font-family: $heading-font;
+      font-size: 18px;
+      color: #48484c;
+    }
+    .example {
+      width: 460px;
+      height: 321px;
+      padding-top: 30px;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: bottom left;
+    }
+    .mobile-upload {
+      background-image: image-url('example/mobile-upload.png');
+    }
+    .mobile-video {
+      background-image: image-url('example/mobile-video.png');
+    }
+    .mobile-apply {
+      background-image: image-url('example/mobile-apply.png');
+    }
+    .circle-group {
+      margin-top: 20px;
+    }
+    .circle-a { @include misc-sprite(circle-a); }
+    .circle-b { @include misc-sprite(circle-b); }
+    .wifi { @include misc-sprite(wifi); margin: 70px 0 95px; }
+    .icon-message { @include misc-sprite(message); }
+    .icon-pic { @include misc-sprite(pic); }
+    .icon-service { @include misc-sprite(service); }
+    .icon-search { @include misc-sprite(search); }
+    .icon-idea { @include misc-sprite(idea); }
+  }
+  .col-message {
+    padding: 56px 0;
+    .r {
+      padding: 0;
+      width: 460px;
+    }
+    h2 {
+      padding-top: 0;
+    }
+    .input-group {
+      margin-top: 30px;
+    }
+    label {
+      position: relative;
+      @include inline-block;
+      font-size: 0;
+      .icon {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+      }
+      .input {
+        width: 195px;
+        height: 26px;
+        padding: 6px 10px 6px 50px;
+        font-size: $font-size;
+        line-height: 26px;
+        border: 1px solid #d8e2ed;
+        box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+        vertical-align: middle;
+        outline: 0 none;
+      }
+    }
+    .icon-mobile { @include misc-sprite(mobile); }
+    .sendmsg {
+      @include inline-block;
+      @include misc-sprite(btn);
+      margin-left: 10px;
+      line-height: 40px;
+      color: #858d94;
+      text-align: center;
+      cursor: pointer;
+    }
+    p { margin-top: 65px; }
+  }
+  .col-last {
+    border-bottom: 0;
+  }
+  .ui-footer {
+    border-top: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="ui-bank">
+	<ul>
+		{% for bank in site.data.banks limit: 9 %}
+		<li>
+			<label class="radio">
+				<input class="bank-radio" type="radio" name="bank" data-bankinfo='{"type": "{{ bank.step-type }}", "id": "{{ bank.id }}", "name": "{{ bank.name }}"}'>
+				<span class="bank-logo bank-{{ bank.name }}" id="{{ bank.id }}" title="{{ bank.title }}">{{ bank.title }}</span>
+			</label>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

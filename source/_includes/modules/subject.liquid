@@ -1,0 +1,14 @@
+{% for subject in site.data.subjects %}
+<div class="ui-subject">
+	<div class="question">{{ forloop.index }}、{{ subject.question }}</div>
+	<div class="answer" data-check="{% if subject.multi == true %}checkbox{% else %}radio{% endif %}">
+		<ul>
+			{% for option in subject.answer %}
+				<li>
+					<label><input type="{% if subject.multi == true %}checkbox{% else %}radio{% endif %}" name="{{ subject.name }}">{{ option }}</label>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+{% endfor %}

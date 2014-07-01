@@ -1,0 +1,16 @@
+{% include head.liquid %}
+</head>
+	<body{% if page.class %} class="page-{{ page.class }}"{% endif %}>
+		<!-- header -->
+		{% include header.liquid %}
+
+		<!-- content -->
+		{{ content }}
+
+		<!-- footer -->
+		{% include footer.liquid %}
+
+		<!-- load scripts -->
+		{% include scripts.liquid %}
+	</body>
+</html>

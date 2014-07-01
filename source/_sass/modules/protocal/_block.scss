@@ -1,0 +1,16 @@
+.protocal-block {
+  width: 680px;
+  height: 435px;
+  margin: 0 auto 10px;
+  font-size: $small-font-size;
+  border: 2px solid #11aaf7;
+  overflow-x: hidden;
+  overflow-y: auto;
+  @include box-shadow(#cecece 1px 1px 3px inset);
+  pre {
+    padding: 15px 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    @include word-break(break-all);
+  }
+}

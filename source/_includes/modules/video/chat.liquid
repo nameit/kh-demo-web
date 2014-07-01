@@ -1,0 +1,56 @@
+<div class="ui-video video-chat" id="videoChat">
+	<!-- 摄像头图标 -->
+	<div class="head video-camera"></div>
+	<div class="video-container">
+		<div class="video-client">
+			<div class="video-window">
+				<div class="object">
+					<!-- object local -->
+					<div class="video-error">
+						<div class="video-mask"></div>
+						<table class="video-tiptext">
+							<tr>
+								<td>
+									<p>视频验证未完成，请返回上一步修改资料<br>或者重新发起视频。</p>
+									<span class="btn-normal btn-warn">返回上一步</span>
+									<span class="btn-normal btn-warn">重新发起视频</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="video-success">
+						<div class="video-mask"></div>
+						<div class="video-tiptext">
+							<p>视频验证完成，请点击“下一步”，继续完成开户操作。</p>
+							<i class="icon video-indicate"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="video-server">
+			<div class="video-window">
+				<div class="object"><!-- object server --></div>
+			</div>
+		</div>
+		<div class="chatbox">
+			<!-- 对话列表 -->
+			<div class="chat-dialogue">
+				<!-- 客服类型的对话多一个 class: from -->
+				<div class="dialogue from">
+					<span class="talker">客服：</span>
+					<span class="message">XXX先生士您好，为了确保您账户的安全性，我们还要再提醒您一下，您在安装数字证书时，还可以设置使用密码，这样您在使用或导出数字证书的时候，直接用使用密码就行了，这个密码需要您自己保管，如果遗忘的话，您也可以通过重新申请数字证书的方式获取。<span class="timestamp">(14:05)</span></span>
+				</div>
+				<div class="dialogue">
+					<span class="talker">我：</span>
+					<span class="message">好的，我知道了。<span class="timestamp">(14:06)</span></span>
+				</div>
+			</div>
+			<!-- 发送对话 -->
+			<div class="chat-meassage">
+				<textarea class="message" id="messageContent"></textarea>
+				<span class="send" id="messageSender">发送</span>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+---
+layout: progress
+title: 安装数字证书
+step: 1
+---
+
+<div id="content">
+	<div class="ui-title">
+		<h2>{{ page.title }}</h2>
+	</div>
+	<!-- 等待提示 -->
+	<div class="ui-tipbox tipbox-info">
+		<div class="tipbox-icon">
+			<i class="icon icon-wait-32"></i>
+		</div>
+		<div class="tipbox-content">
+			<h3 class="title">数字证书正在生成中...</h3>
+			<p class="explain">请耐心等待。</p>
+			<p class="explain"><a href="#">联系客服</a> | <a href="#">重新下载</a></p>
+		</div>
+	</div>
+	<!-- 错误提示 -->
+	<div class="ui-tipbox tipbox-error">
+		<div class="tipbox-icon">
+			<i class="icon icon-error-32"></i>
+		</div>
+		<div class="tipbox-content">
+			<h3 class="title">安装出错啦!</h3>
+			<p class="explain">您所使用的浏览器暂不支持巴拉巴拉巴拉。</p>
+			<p class="explain"><a href="#">联系客服</a> | <a href="#">重新下载</a></p>
+		</div>
+	</div>
+	<!-- 成功提示 -->
+	<div class="ui-tipbox tipbox-success">
+		<div class="tipbox-icon">
+			<i class="icon icon-success-32"></i>
+		</div>
+		<div class="tipbox-content">
+			<h3 class="title">数字证书已经成功安装！</h3>
+			<p class="explain">恭喜您已成功安装数字证书，请重新刷新页面完成后续操作</p>
+			<p class="explain"><a href="#">联系客服</a> | <a href="#">刷新页面</a></p>
+		</div>
+	</div>
+
+	<!-- 下一步 -->
+	{% include modules/jump.liquid %}
+</div>
+
+<div class="ui-hint">
+	<p class="title">温馨提示</p>
+	<ul class="hints">
+		<li>证书下载安装过程中将弹出密码设置窗口，请按照如下示意设置证书密码。<img src="{{ site.baseurl }}/images/example/cert.gif" alt="设置证书密码示范"></li>
+	</ul>
+</div>

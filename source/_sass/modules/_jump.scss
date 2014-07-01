@@ -1,0 +1,29 @@
+%jump-link {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  font-size: $jump-font-size;
+  color: $jump-link-color;
+}
+
+.ui-jump {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+  .back {
+    @extend %jump-link;
+    left: 0;
+  }
+  .next {
+    @extend %jump-link;
+    right: 0;
+  }
+  .btn-group {
+    position: relative;
+    .loading {
+      position: absolute;
+      margin-top: 13px;
+      margin-left: 10px;
+    }
+  }
+}

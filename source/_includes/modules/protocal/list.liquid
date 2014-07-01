@@ -1,0 +1,14 @@
+<div class="ui-protocal-list">
+	<div class="ui-title">
+		<h2>请签署开户相关协议</h2>
+	</div>
+	<ul class="protocal-list">
+		{% for protocal in site.data.protocals %}
+			<li>
+				<em>{{ forloop.index }} <i class="inner-arrow"></i></em>
+				<a href="" target="_blank">《{{ protocal.name }}》</a>
+			</li>
+		{% endfor %}
+	</ul>
+	{% include modules/agree.liquid content="我已阅读并同意以上所有协议和业务规则内容" id="agreeList" %}
+</div>

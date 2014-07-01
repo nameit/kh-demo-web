@@ -1,0 +1,76 @@
+.fill-group {
+  margin-bottom: 20px;
+  .fill-label {
+    @include inline-block;
+    width: 120px;
+    text-align: right;
+    .require {
+      padding-right: 3px;
+      font-size: $h4-size;
+      color: $require-color;
+      vertical-align: -3px;
+    }
+  }
+  .fill-control {
+    @include inline-block;
+    margin-left: 30px;
+    font-size: 0;
+    .long {
+      width: 360px;
+    }
+    .short {
+      width: 108px;
+    }
+    .radio,
+    .checkbox {
+      @include inline-block;
+      padding-top: 6px;
+      margin-right: 10px;
+      font-size: $font-size;
+      &.block {
+        display: block;
+      }
+    }
+    .fill-btn {
+      @include inline-block;
+      width: 100px;
+      height: 31px;
+      margin-left: 10px;
+      line-height: 31px;
+      font-size: $font-size;
+      text-align: center;
+      border: 1px solid #b4b4b4;
+      background-color: #f4f4f4;
+      cursor: pointer;
+    }
+  }
+  .js-valid-tip {
+    margin-left: 10px;
+  }
+}
+
+.fill-input {
+  @include inline-block;
+  width: 220px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid $input-bd-color;
+  padding: 6px 10px 5px 10px;
+  font-size: 14px;
+  outline: none;
+  &:hover {
+    border-color: $input-bd-color-hover;
+  }
+  &:focus {
+    border-color: $input-bd-color-focus;
+  }
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin: 0;
+}
+
+*+html .fill-group .fill-label {
+  vertical-align: top;
+}

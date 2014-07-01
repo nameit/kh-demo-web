@@ -1,0 +1,17 @@
+.ui-subject {
+  margin-bottom: 20px;
+  .question {
+    color: $info-blue;
+  }
+  .answer {
+    margin: 10px 20px;
+  }
+  ul {
+    li {
+      line-height: 24px;
+    }
+    input {
+      margin-right: 5px;
+    }
+  }
+}

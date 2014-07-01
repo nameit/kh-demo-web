@@ -1,0 +1,229 @@
+$index-sprite-dimensions: true;
+$index-spacing: 3px;
+@import "sprite/index/*.png";
+@include all-index-sprites;
+
+.page-index {
+  background-color: #fff;
+  .banner {
+    position: relative;
+    top: -15px;
+    z-index: 9;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .col {
+    @include pie-clearfix;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ebebeb;
+    .title {
+      font: 18px $heading-font;
+      color: #3a3a3a;
+    }
+  }
+  .col-last {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  .ui-footer {
+    border-top: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+  }
+}
+
+#login {
+  position: relative;
+  @extend #main;
+}
+
+.ui-login {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fbfbfb;
+  .login-tab {
+    font-size: 0;
+    .tab {
+      @include inline-block;
+      width: 171px;
+      height: 48px;
+      cursor: pointer;
+    }
+    .tab-kh { @include index-sprite(tab-kh); }
+    .tab-zh { @include index-sprite(tab-zh); }
+    .tab-kh-active { @include index-sprite(tab-kh-active); }
+    .tab-zh-active { @include index-sprite(tab-zh-active); }
+  }
+  .login-panel {
+    padding: 25px 38px 15px;
+    background-color: #fff;
+    .input-group {
+      font-size: 0;
+    }
+    label {
+      position: relative;
+      @include inline-block(baseline);
+      margin-bottom: 20px;
+      font-size: 0;
+      .icon {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+      }
+      .input {
+        width: 195px;
+        height: 26px;
+        padding: 6px 10px 6px 50px;
+        font-size: $font-size;
+        line-height: 26px;
+        border: 1px solid #d8e2ed;
+        box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+        vertical-align: middle;
+        outline: 0 none;
+      }
+      .input-code {
+        width: 90px;
+      }
+    }
+    .getcode {
+      @include inline-block;
+      @include index-sprite(getcodebtn);
+      margin-left: 10px;
+      line-height: 40px;
+      font-size: $font-size;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      &.disabled {
+        cursor: text;
+      }
+      .js-second {
+        font-size: $font-size;
+      }
+    }
+    .mobile-kh { @include index-sprite(mobile-kh); }
+    .mobile-zh { @include index-sprite(mobile-zh); }
+    .code-kh { @include index-sprite(code-kh); }
+    .code-zh { @include index-sprite(code-zh); }
+    .btn-kh { @include index-sprite(btn-kh); }
+    .btn-zh { @include index-sprite(btn-zh); }
+    .btn {
+      display: block;
+      font-size: 0;
+    }
+    .tip {
+      margin-top: 10px;
+      font-size: $small-font-size;
+      color: $login-tip-color;
+    }
+  }
+}
+
+// hack for IE7
+*+html .ui-login .login-panel label .input {
+  padding-bottom: 5px;
+}
+
+.ui-loginerr {
+  padding: 9px 12px;
+  width: 235px;
+  background-color: #ff3e2f;
+  border: 1px solid #670801;
+  p {
+    padding: 0 15px;
+    font-size: $small-font-size;
+    color: #fff;
+  }
+  .close {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    line-height: 10px;
+    font-size: $h3-size;
+    color: #fff;
+    cursor: pointer;
+  }
+  .arrow {
+    position: absolute;
+    bottom: -11px;
+    left: 80px;
+    @include index-sprite(arrow);
+  }
+}
+
+.ui-prepare {
+  @include float(left);
+  padding-right: 55px;
+  .prepare-items {
+    @include pie-clearfix;
+    margin-left: -25px;
+    padding-top: 20px;
+    li {
+      @include float(left);
+      margin-left: 25px;
+    }
+  }
+}
+
+.ui-faq {
+  @include float(left);
+  padding-left: 50px;
+  background: image-url('gif/vline.gif') no-repeat left center;
+  ul {
+    padding-top: 20px;
+    li {
+      width: 150px;
+      margin-bottom: 3px;
+      font-size: 12px;
+      @include ellipsis;
+      a {
+        font-size: 12px;
+        color: #7d7d7d;
+        text-decoration: none;
+      }
+      .more-help {
+        color: #6898cb;
+      }
+    }
+  }
+}
+
+.ui-support {
+  padding-top: 20px;
+  .support-banks {
+    @include pie-clearfix;
+    margin-left: -20px;
+    padding-top: 20px;
+    li {
+      @include float(left);
+      margin-left: 20px;
+      margin-bottom: 10px;
+      .bank-logo {
+        @include inline-block;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        text-indent: -9999px;
+        overflow: hidden;
+        zoom: 1;
+      }
+    }
+  }
+}
+
+.ui-warmtip {
+  .warmtip-items {
+    padding-top: 10px;
+    margin-left: 20px;
+    list-style: decimal;
+    list-style-position: outside;
+    li {
+      line-height: 22px;
+      font-size: $small-font-size;
+    }
+  }
+}

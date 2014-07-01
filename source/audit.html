@@ -1,0 +1,77 @@
+---
+layout: default
+class: audit
+title: 开户审核
+---
+
+<div id="main">
+	<div id="content">
+
+		<!-- 证件照需整改 -->
+		<div class="ui-tiptext tiptext-error">
+			<p class="tiptext-message">
+				<i class="icon icon-error"></i>您上传的证件照不符合要求，请 <a href="#">重新上传</a>
+			</p>
+			<div class="tiptext-close">×</div>
+		</div>
+
+		<!-- 视频需整改 -->
+		<div class="ui-tiptext tiptext-error">
+			<p class="tiptext-message">
+				<i class="icon icon-error"></i>您的视频不符合要求，请 <a href="#">重新视频</a>
+			</p>
+			<div class="tiptext-close">×</div>
+		</div>
+
+		<h2 class="ret-text">尊敬的<b>张达明</b>先生，恭喜您开户成功！</h2>
+
+		<!-- 开户成功信息 -->
+		<div class="ui-tipbox tipbox-notice ret-box">
+			<div class="tipbox-icon">
+				<i class="icon icon-success-32"></i>
+			</div>
+			<div class="tipbox-content">
+				<h3 class="title">您的资金账号是：<span class="account-id">12345678</span>，使用资金账号和交易密码即可登录{% raw %}{{ site.data.broker }}{% endraw %}。</h3>
+				<p class="explain">如需了解更多投资者教育相关内容，请登录我公司投资者教育网站或阅读《投资者教育手册》</p>
+				<p class="explain"><a href="#">投资者教育网站</a> | <a href="#">《投资者教育手册》</a></p>
+			</div>
+		</div>
+
+		<!-- 开通第三方存管 -->
+		<p class="assist">提示：您的第三方存管开通还须登录网银确认连通，可参考<a href="#">《工商银行网银开通流程》</a>。点击下方按钮，开通第三方存管。</p>
+		<div class="button">
+			<a href="#" class="btn-primary btn-large" target="_blank">前往网银开通第三方存管</a>
+		</div>
+
+		<!-- 账户详情表格 -->
+		<div class="ui-table">
+			<div class="caption">
+				<h3>以下是您的账户详细信息</h3>
+			</div>
+			<table>
+				<colgroup>
+					<col width="10%">
+					<col width="20%">
+					<col width="15%">
+					<col width="20%">
+					<col width="15%">
+					<col width="20%">
+				</colgroup>
+				<tr>
+					<td class="attr">上海A股</td>
+					<td class="val">12345678</td>
+					<td class="attr">沪开放式基金</td>
+					<td class="val">12345678</td>
+					<td class="attr">深开放式基金</td>
+					<td class="val">12345678</td>
+				</tr>
+				<tr class="last">
+					<td class="attr">深圳A股</td>
+					<td class="val">12345678</td>
+					<td class="attr">存管银行</td>
+					<td class="val" colspan="3">中国工商银行</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

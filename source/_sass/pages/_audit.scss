@@ -1,0 +1,31 @@
+%gutter {
+  margin-bottom: 20px;
+}
+
+.page-audit {
+  .ret-text {
+    @extend %gutter;
+    font-size: $h4-size;
+    color: $ret-text-color;
+    b {
+      padding: 0 5px;
+      font-size: $h1-size;
+    }
+  }
+  .ret-box {
+    // @extend %box;
+    @extend %gutter;
+  }
+  .account-id {
+    font-size: $h3-size;
+    color: $account-id-color;
+  }
+  .assist {
+    @extend %gutter;
+    font-size: $small-font-size;
+  }
+  .button {
+    @extend %gutter;
+    text-align: center;
+  }
+}

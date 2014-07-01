@@ -1,0 +1,17 @@
+---
+layout: progress
+class: profile
+title: 填写基本资料
+step: 1
+---
+
+<div id="content">
+	<div class="ui-title">
+		<h2>{{ page.title }}</h2>
+		<span class="follow">请您仔细核对下列资料是否正确</span>
+	</div>
+	{% for fill in site.data.fills %}
+		{% include modules/filler.liquid %}
+	{% endfor %}
+	{% include modules/jump.liquid %}
+</div>

@@ -1,0 +1,78 @@
+- id: name
+  name: 客户姓名
+  require: true
+  type: input
+  class:
+
+- id: cid
+  name: 身份证号
+  require: true
+  type: input
+  class:
+
+- id: cidAddr
+  name: 身份证住址
+  require: true
+  type: input
+  class: long
+
+- id: address
+  name: 联系地址
+  require: true
+  type: input
+  class: long
+
+- id: postCode
+  name: 邮政编码
+  require: true
+  type: input
+  class:
+
+- id: depart
+  name: 开户营业部
+  require: true
+  type: select
+  class:
+  options:
+    - value: -1
+      text: 请选择
+
+- id: job
+  name: 职业
+  require: true
+  type: select
+  class:
+  options:
+    - value: -1
+      text: 请选择
+    - value: 1
+      text: 企事业单位职工
+    - value: 2
+      text: 党政机关工作人员
+    - value: 3
+      text: 农民
+    - value: 4
+      text: 个体工商户
+    - value: 5
+      text: 学生
+    - value: 6
+      text: 证券从业人员
+    - value: 7
+      text: 无业
+    - value: 8
+      text: 其它
+
+- id: edu
+  name: 学历
+  require: true
+  type: select
+  class:
+  options:
+    - value: -1
+      text: 请选择
+    - value: 1
+      text: 专科及以下
+    - value: 2
+      text: 本科
+    - value: 3
+      text: 硕士及以上

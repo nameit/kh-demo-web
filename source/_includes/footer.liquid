@@ -1,0 +1,9 @@
+<div class="ui-footer">
+	<div class="footnav">
+		{% for footnav in site.data.footnavs %}
+			<a target="_blank" href="{{ footnav.url }}">{{ footnav.name }}</a>
+			{% unless forloop.last %}<span class="divider">|</span>{% endunless %}
+		{% endfor %}
+	</div>
+	<p>©2014 {{ site.project }}股份有限责任公司版权所有</p>
+</div>

@@ -1,0 +1,54 @@
+.upload-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px;
+  td {
+    background-color: #f2f4f6;
+    dl {
+      display: block;
+      text-align: center;
+    }
+    dt {
+      padding: 25px 0 0;
+      margin-bottom: 25px;
+      font-size: 24px;
+      font-family: $heading-font;
+    }
+    dd {
+      margin-bottom: 25px;
+    }
+  }
+  .upload-gif {
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 3px;
+  }
+  .upload-btn {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+    .file-input {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 164px;
+      height: 37px;
+      margin-left: -82px;
+      font-size: 50px;
+      cursor: pointer;
+      overflow: hidden;
+      @include transparent;
+      outline: none;
+    }
+    .btn {
+      width: 124px;
+    }
+  }
+}
+
+.mod-upload {
+  .ui-agree {
+    margin: 0 20px;
+    padding: 10px 0;
+  }
+}

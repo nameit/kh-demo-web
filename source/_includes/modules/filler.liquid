@@ -1,0 +1,17 @@
+<div class="ui-fill fill-group">
+	<label for="{{ fill.id }}" class="fill-label">{% if fill.require == true %}<em class="require">*</em>{% endif %}{{ fill.name }}</label>
+	<div class="fill-control">
+		{% case fill.type %}
+			{% when 'input' %}
+			<input type="text" class="fill-input{% unless fill.class == nil %} {{ fill.class }}{% endunless %}" id="{{ fill.id }}">
+			{% when 'select' %}
+			<select id="{{ fill.id }}">
+				{% for option in fill.options %}
+					<option value="{{ option.value }}">{{ option.text }}</option>
+				{% endfor %}
+			</select>
+			{% else %}
+			{{ fill.text }}
+		{% endcase %}
+	</div>
+</div>

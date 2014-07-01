@@ -1,0 +1,31 @@
+{
+	"name": "kh-demo-web",
+	"version": "1.0.0",
+  "project": "ctsec",
+  "description": "Online account opening system for investors",
+  "author": {
+    "name": "wuwj",
+    "email": "wuwj@cairenhui.com"
+  },
+  "scripts": {
+    "start": "grunt dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-compass": "~0.9.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-jekyll": "~0.4.2",
+    "grunt-sync": "~0.0.7",
+    "matchdep": "~0.3.0"
+  }
+}

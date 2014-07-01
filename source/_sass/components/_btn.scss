@@ -1,0 +1,42 @@
+%btn {
+  @include inline-block;
+  font-family: $heading-font !important;
+  border: 0 none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-normal {
+  height: 33px;
+  padding: 0 20px;
+  line-height: 33px;
+  font-size: 14px;
+}
+
+.btn-large {
+  height: 44px;
+  padding: 0 30px;
+  line-height: 44px;
+  font-size: 20px;
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $btn-blue;
+  color: #fff;
+}
+
+.btn-process {
+  @extend .btn-primary;
+}
+
+.btn-warn {
+  @extend %btn;
+  background-color: $btn-yellow;
+  color: #fff;
+}
+
+.btn-default {
+  @extend %btn;
+  background-color: $btn-gray;
+}

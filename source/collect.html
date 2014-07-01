@@ -1,0 +1,41 @@
+---
+layout: progress
+class: collect
+title: 上传身份证照片
+step: 1
+---
+
+<div id="content">
+	<div class="ui-title">
+		<h2>{{ page.title }}</h2>
+	</div>
+	<table class="upload-table">
+		<tbody>
+			<tr>
+				<td>
+					{% include modules/upload.liquid content="身份证正面" id="uploadCardFront" %}
+				</td>
+				<td>
+					{% include modules/upload.liquid content="身份证反面" id="uploadCardBack" %}
+				</td>
+				<td>
+					{% include modules/upload.liquid content="正面头像" id="uploadCardFace" %}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	{% include modules/agree.liquid content="我已阅读并同意<a href='#'>《个人数字证书申请责任书》</a>" id="agree" %}
+
+	<!-- 下一步 -->
+	{% include modules/jump.liquid %}
+</div>
+
+<!-- 温馨提示 -->
+<div class="ui-hint">
+	<p class="title">温馨提示</p>
+	<ul class="hints">
+		<li>支持的图片格式：jpg, gif, png, bmp，图片大小：不超过5M</li>
+		<li>上传身份证照片：您可以通过扫描仪或者相机拍摄的方式获得身份证照片，请确保图像清晰度，并做适当剪裁，如示例：<img src="{{ site.baseurl }}/images/example/copy.jpg" alt="扫描证件示范"></li>
+		<li>上传正面免冠照片：您的近期正面免冠照片，如示例：<img src="{{ site.baseurl }}/images/example/face.jpg" alt="正面免冠照片示范"></li>
+	</ul>
+</div>

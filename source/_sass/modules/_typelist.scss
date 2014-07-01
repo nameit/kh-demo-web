@@ -1,0 +1,29 @@
+.type-list {
+  @include clearfix;
+  width: 650px;
+  margin: 0 auto 30px;
+  padding: 15px 15px 0 15px;
+  border: 4px solid $panel-bd-color;
+  background-color: $panel-bg-color;
+  li {
+    float: left;
+    width: 280px;
+    margin-bottom: 15px;
+    cite {
+      @include inline-block;
+      width: 16px;
+      height: 16px;
+      background: image-url("gif/ques.gif") no-repeat 0 0;
+      text-indent: -9999px;
+      cursor: help;
+    }
+    .hint {
+      border-bottom: 1px dashed $graywhite-color;
+    }
+  }
+}
+
+// hack for IE7
+*+html .type-list {
+  padding: 15px;
+}

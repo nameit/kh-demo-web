@@ -1,0 +1,39 @@
+- id: ICBC
+  name: gongshang
+  title: 中国工商银行
+  step-type: 1
+
+- id: CMB
+  name: zhaoshang
+  title: 招商银行
+  step-type: 2
+
+- id: BOC
+  name: zhongguo
+  title: 中国银行
+  step-type: 2
+
+- id: CCB
+  name: jianshe
+  title: 中国建设银行
+  step-type: 1
+
+- id: SPDB
+  name: pufa
+  title: 浦发银行
+  step-type: 1
+
+- id: ABC
+  name: nongye
+  title: 中国农业银行
+  step-type: 2
+
+- id: CSCB
+  name: changsha
+  title: 长沙银行
+  step-type: 1
+
+- id: PSBC
+  name: youzheng
+  title: 中国邮政储蓄银行
+  step-type: 1

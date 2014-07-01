@@ -1,0 +1,14 @@
+<div class="ui-account-type">
+	<div class="ui-title">
+		<h2>请选择开设的账户类型</h2>
+	</div>
+	<ul class="type-list" data-check="checkbox">
+		{% for account in site.data.accounts %}
+			<li>
+				<input type="checkbox" id="{{ account.id }}">
+				<label for="{{ account.id }}">{{ account.name }}</label>
+				<cite title="{{ account.abbr }}"></cite>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

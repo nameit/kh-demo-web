@@ -1,0 +1,36 @@
+%table-cell {
+  padding: 10px 20px;
+  font-size: $small-font-size;
+  border-bottom: 1px solid $td-bd-color;
+}
+
+.ui-table {
+  border: 1px solid $table-bd-color;
+  table {
+    width: 100%;
+  }
+  td {
+    @extend %table-cell;
+  }
+  .caption {
+    padding: 0 20px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid $table-bd-color;
+    background: #fbfbfb image-url('header/caption.png') repeat-x;
+    h3 {
+      color: $heading-blue;
+    }
+  }
+  .last {
+    td {
+      border-bottom: 0;
+    }
+  }
+  .attr {
+    background-color: $table-attr-color;
+  }
+  .val {
+    background-color: $table-val-color;
+  }
+}

@@ -1,0 +1,43 @@
+.js-select {
+  @include inline-block;
+  .js-select-choice {
+    position: relative;
+    @extend .fill-input;
+    cursor: pointer;
+    .js-select-chosen {
+      display: block;
+      margin-right: 12px;
+      @include ellipsis();
+    }
+    .js-select-arrow {
+      position: absolute;
+      width: 11px;
+      height: 6px;
+      top: 13px;
+      right: 9px;
+      background: image-url('diyselect/arrow.png') no-repeat;
+    }
+  }
+  .js-select-list {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #cecece;
+    zoom: 1;
+    li {
+      line-height: 30px;
+      padding: 0 10px;
+      white-space: nowrap;
+      font-size: 14px;
+      cursor: pointer;
+      // zoom: 1;
+      // @include ellipsis();
+      &.active,
+      &.selected {
+        background-color: #f6f6f6;
+      }
+    }
+  }
+}
+
+

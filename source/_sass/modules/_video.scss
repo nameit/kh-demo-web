@@ -1,0 +1,8 @@
+$video-sprite-dimensions: true;
+$video-spacing: 3px;
+$video-layout:smart;
+@import "sprite/video/*.png";
+@include all-video-sprites;
+
+@import "modules/video/ready";
+@import "modules/video/chat";

@@ -1,0 +1,18 @@
+.ui-step {
+  ol {
+    font-size: 0;
+  }
+  li {
+    @include inline-block;
+    width: 316px;
+    height: 58px;
+    &.active {
+      background-position: 0 -60px;
+    }
+  }
+  @for $i from 1 through 3 {
+    .step#{$i} {
+      background: image-url('step/step#{$i}.png') no-repeat;
+    }
+  }
+}

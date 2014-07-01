@@ -1,0 +1,22 @@
+---
+layout: progress
+class: video
+title: 视频实名验证
+step: 1
+---
+
+<div id="content">
+	<div class="ui-title">
+		<h2>{{ page.title }}</h2>
+	</div>
+
+	{% include modules/video/detect.liquid %}
+	{% include modules/video/normal.liquid %}
+	{% include modules/video/wait.liquid %}
+	{% include modules/video/error.liquid %}
+	{% include modules/video/queue.liquid %}
+	{% include modules/video/chat.liquid %}
+
+	<!-- 下一步 -->
+	{% include modules/jump.liquid %}
+</div>

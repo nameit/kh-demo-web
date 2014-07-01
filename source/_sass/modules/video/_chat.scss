@@ -1,0 +1,174 @@
+%object {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+%video-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+
+%video-success {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 66px;
+}
+
+%mask {
+  z-index: 8;
+  background: #000;
+  @include opacity(.6);
+}
+
+%message {
+  float: left;
+  height: 18px;
+  margin: 0;
+  padding: 3px 6px;
+  line-height: 18px;
+  font-size: 12px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: $input-bd-color;
+}
+
+.video-chat {
+  width: 680px;
+  margin: 10px auto;
+  .head {
+    margin-bottom: 20px;
+    margin-left: 168px;
+  }
+}
+
+.video-container {
+  position: relative;
+  .object {
+    @extend %object;
+  }
+}
+
+.video-window {
+  padding: 12px;
+}
+
+.video-error {
+  .video-mask {
+    @extend %video-error;
+    @extend %mask;
+  }
+  .video-tiptext {
+    @extend %video-error;
+    td {
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .btn {
+      margin: 10px 5px 0 5px;
+    }
+  }
+}
+
+.video-success {
+  .video-mask {
+    @extend %video-success;
+    @extend %mask;
+  }
+  .video-tiptext {
+    @extend %video-success;
+    p {
+      float: left;
+      width: 240px;
+      margin: 12px;
+      color: #fff;
+    }
+    .icon {
+      margin-top: 7px;
+      margin-left: 30px;
+    }
+  }
+}
+
+.video-client {
+  position: relative;
+  .video-window {
+    height: 281px;
+  }
+}
+
+.video-server {
+  position: absolute;
+  top: 0;
+  right: 0;
+  .video-window {
+    height: 159px;
+  }
+}
+
+.chatbox {
+  position: absolute;
+  top: 193px;
+  right: 0;
+  width: 245px;
+  .chat-dialogue {
+    height: 78px;
+    padding: 5px 10px;
+    border: 1px solid $input-bd-color;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .dialogue {
+      @include clearfix;
+      width: 220px;
+      margin-bottom: 5px;
+      font-size: $small-font-size;
+      .talker {
+        float: left;
+        width: 40px;
+        text-align: right;
+        color: $heading-blue;
+      }
+      .message {
+        float: left;
+        width: 170px;
+      }
+      .timestamp {
+        color: $graywhite-color;
+      }
+    }
+    .from {
+      .message {
+        color: $info-blue;
+      }
+    }
+  }
+  .chat-meassage {
+    @include clearfix;
+    .message {
+      width: 160px;
+      @extend %message;
+      overflow: auto;
+      outline: 0 none;
+      resize: vertical;
+    }
+    .send {
+      width: 58px;
+      @extend %message;
+      color: $chat-send-color;
+      text-align: center;
+      border-left: 0;
+      background-color: $chat-send-bg-color;
+      @include background-image(linear-gradient(to top, $send-gradient-start, $send-gradient-end));
+      cursor: pointer;
+    }
+  }
+}

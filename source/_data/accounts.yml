@@ -1,0 +1,15 @@
+- name: 上海A股
+  id: typeSHA
+  abbr: 在上海证券交易所上市的股票。
+
+- name: 深圳A股
+  id: typeSZA
+  abbr: 在深圳证券交易所上市的股票。
+
+- name: 沪开发式基金
+  id: typeSHDF
+  abbr: 基金设立后，投资者可以随时或赎回基金单位，基金规模不固定的投资基金。
+
+- name: 深开发式基金
+  id: typeSZDF
+  abbr: 基金设立后，投资者可以随时或赎回基金单位，基金规模不固定的投资基金。

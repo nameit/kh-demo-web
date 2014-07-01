@@ -1,0 +1,72 @@
+// Font=================================================================================================
+$font:         Tahoma, Arial, "Hiragino Sans GB", \5B8B\4F53, sans-serif !default;
+$heading-font: \5FAE\8F6F\96C5\9ED1, "Hiragino Sans GB", \9ED1\4F53, sans-serif !default;
+$western-font: Georgia, Cambria, "Times New Roman", Times, serif !default;
+
+$font-size:         14px !default;
+$small-font-size:   12px !default;
+$h1-size:           24px !default;
+$h2-size:           20px !default;
+$h3-size:           18px !default;
+$h4-size:           16px !default;
+
+$hotline-font-size: 24px !default;
+$jump-font-size:    12px !default;
+$hint-font-size:    12px !default;
+$queue-num-size:    36px !default;
+
+$heading-weight:    normal !default;
+
+// Color================================================================================================
+$text-color:           #666666 !default;
+$gray-color:           #808080 !default;
+$graywhite-color:      #b2b2b2 !default;
+$body-color:           #e8e8e8 !default;
+$body-index-color:     #f4f4f4 !default;
+$footer-index-bdt:     #dbdbdb !default;
+$content-color:        #ffffff !default;
+$heading-blue:         #2571c7 !default;
+$info-blue:            #3c73ce !default;
+$btn-blue:             #009ce9 !default;
+$btn-yellow:           #ff9023 !default;
+$btn-gray:             #f8f8f8 !default;
+
+$link-color:           #0054ff !default;
+
+$hotline-color:        #f05948 !default;
+$jump-link-color:      #8e8e8e !default;
+$panel-bd-color:       #eff2f4 !default;
+$panel-bg-color:       #f9f9f9 !default;
+$protocal-li-bg-color: #f3f5f7 !default;
+$protocal-em-bg-color: #00affd !default;
+$ret-text-color:       #393939 !default;
+$account-id-color:     #ff0000 !default;
+$prepare-text-color:   #515151 !default;
+
+$input-bd-color:       #cecece !default;
+$input-shadow:         #f3f3f3 !default;
+$input-bd-color-hover: #b4b4b4 !default;
+$input-bd-color-focus: #3db2ee !default;
+
+$table-bd-color:       #d4d4d4 !default;
+$td-bd-color:          #e6e6e6 !default;
+$table-attr-color:     #f7f7f7 !default;
+$table-val-color:      #ffffff !default;
+
+$tabs-bg-color:        #f0f4f7 !default;
+$tab-bg-color:         #e5eaed !default;
+$tab-active-color:     #f4920f !default;
+
+$ready-bd-color:       #a4bdd8 !default;
+$ready-bg-color:       #edf1f6 !default;
+$video-tip-color:      #5c7792 !default;
+$video-tip-bd-color:   #d2dde9 !default;
+$video-tip-bg-color:   #ffffff !default;
+$queue-num-color:      #f77e14 !default;
+$chat-send-color:      #816743 !default;
+$chat-send-bg-color:   #ffe9ac !default;
+$send-gradient-start:  #ffe199 !default;
+$send-gradient-end:    #fff1c1 !default;
+
+$login-tip-color:   #858d94 !default;
+$require-color:     #fe2020 !default;

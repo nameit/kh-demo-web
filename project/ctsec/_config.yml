@@ -1,0 +1,7 @@
+project: ctsec
+safe: false
+source: site
+destination: _site
+baseurl: ''
+url: ''
+exclude: ['config.rb']

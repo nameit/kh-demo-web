@@ -1,0 +1,31 @@
+.ui-tab {
+  height: 38px;
+  line-height: 38px;
+  font-size: 0;
+  background-color: $tabs-bg-color;
+  .tab {
+    position: relative;
+    @include inline-block;
+    padding: 0 25px;
+    font-family: $heading-font;
+    font-size: $h4-size;
+    background-color: $tab-bg-color;
+    &.active {
+      color: #fff;
+      background-color: $tab-active-color;
+      em {
+        display: block;
+      }
+    }
+    .arrow-down {
+      display: none;
+      position: absolute;
+      left: 50%;
+      bottom: -19px;
+      width: 13px;
+      margin-left: -6px;
+      font-size: 13px;
+      color: $tab-active-color;
+    }
+  }
+}

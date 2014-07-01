@@ -1,0 +1,107 @@
+body {
+	line-height: 1.5;
+	font-size: $font-size;
+	font-family: $font;
+	color: $text-color;
+	background-color: $body-color;
+}
+
+#main {
+	width: 950px;
+	margin: 0 auto;
+}
+
+#content {
+	padding: 30px 40px;
+	background-color: $content-color;
+}
+
+.js-valid-tip,
+.js-explain-tip {
+    @include inline-block;
+    font-size: $small-font-size !important;
+    .icon {
+        margin-right: 3px;
+    }
+}
+
+*+html .js-valid-tip {
+    vertical-align: top !important;
+}
+
+.js-valid-loading {
+    margin-left: 10px;
+    @include inline-block;
+}
+
+#timeOutAlert {
+    position: absolute;
+    border: 1px solid #f4ceac;
+    background-color: #fff7de;
+    z-index: 700;
+    // @include border-radius(2px);
+    .arrow {
+        position: absolute;
+        @include inline-block();
+        width: 14px;
+        height: 7px;
+        right: 40px;
+        top: -7px;
+        z-index: 800;
+        // @include bg-sprite(arrow-yellow-u);
+        background: image-url('timeout/arrow.png') no-repeat;
+    }
+    .hd {
+        height: 30px;
+        line-height: 30px;
+        padding-right: 10px;
+        border-bottom: 1px solid #f5e6b8;
+        text-align: right;
+        .close {
+            font-size: 12px;
+            color: #8d8d8d;
+            cursor: pointer;
+        }
+    }
+    .bd {
+        @include clearfix;
+        .fl {
+            float: left;
+        }
+    }
+    .lamp {
+        display: block;
+        width: 75px;
+        height: 80px;
+        margin: 20px 0 0 12px;
+        // @include bg-sprite(lamp);
+    }
+    .text {
+        width: 210px;
+        padding: 20px;
+        font-size: 12px;
+        line-height: 28px;
+        .online-service {
+            @include inline-block();
+            width: 90px;
+            height: 25px;
+            margin-left: 10px;
+            // @include bg-sprite(online-service-window);
+            text-indent: -9999px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        b {
+          font-weight: bold;
+          padding: 0 5px;
+        }
+        .hotline {
+          color: #fc8b25;
+          font-size: 24px;
+        }
+    }
+    .contact {
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+}

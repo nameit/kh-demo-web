@@ -1,0 +1,41 @@
+.protocal-list {
+  width: 680px;
+  margin: 0 auto 10px;
+  li {
+    @include clearfix;
+    height: 38px;
+    margin-bottom: 5px;
+    line-height: 38px;
+    background-color: $protocal-li-bg-color;
+    em {
+      position: relative;
+      float: left;
+      width: 38px;
+      height: 38px;
+      font-size: $h3-size;
+      font-style: normal;
+      text-align: center;
+      color: #fff;
+      background-color: $protocal-em-bg-color;
+      .inner-arrow {
+        position: absolute;
+        top: 12px;
+        right: 0;
+        z-index: 1;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-color: transparent $protocal-li-bg-color transparent transparent;
+        border-width: 6px 6px 6px 0;
+      }
+    }
+    a {
+      float: left;
+      margin-left: 10px;
+      color: $info-blue;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}

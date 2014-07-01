@@ -1,0 +1,45 @@
+//
+// @TODO: Add docs to tipbox!
+//
+@mixin tiptext($color) {
+  border: 1px solid $color;
+  background-color: lighten($color, 14%);
+}
+
+//info   #b2e2ea
+//error  #ffb4a5
+$tiptext-types:(
+ (info     #ffeaa0)
+ (error    #ffeaa0)
+ (success  #ffeaa0)
+ (notice   #d5d5d5)
+ )!default;
+
+@each $tiptext-type in $tiptext-types {
+  $type:  nth($tiptext-type, 1);
+  $color: nth($tiptext-type, 2);
+
+  .tiptext-#{$type} {
+    @include tiptext($color);
+  }
+}
+
+.ui-tiptext {
+  position: relative;
+  zoom: 1;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  .tiptext-message {
+    font-size: $small-font-size;
+    .icon {
+      margin-right: 5px;
+    }
+  }
+  .tiptext-close {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    font-size: $h3-size;
+    cursor: pointer;
+  }
+}

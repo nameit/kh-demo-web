@@ -1,0 +1,19 @@
+---
+layout: progress
+class: survey
+title: 问卷回访
+step: 2
+---
+
+<div id="content">
+	<div class="ui-subject">
+		<div class="ui-title">
+			<h2>{{ page.title }}</h2>
+		</div>
+		<p class="ui-text"><i class="icon icon-info"></i> 请选择并确定以下问题答案</p>
+		{% include modules/subject.liquid %}
+	</div>
+
+	<!-- 下一步 -->
+	{% include modules/jump.liquid %}
+</div>
