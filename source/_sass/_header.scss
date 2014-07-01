@@ -1,64 +1,64 @@
 .ui-header {
-	height: 100px;
-	background: image-url('header/bg.png') repeat-x;
-	.header-inner {
-		@include clearfix;
-		width: 950px;
-		height: 100%;
-		margin: 0 auto;
-	}
-	.logo {
-		float: left;
-		margin-top: 20px;
-		a, span {
-			@include inline-block;
-			vertical-align: middle;
-			margin-right: 15px;
-		}
-		span {
-			padding-left: 15px;
-			font-size: 20px;
-			font-family: $heading-font;
-			color: #666;
-			background: image-url('header/vline.png') no-repeat left center;
-		}
-		img {
-			display: block;
-		}
-	}
-	.nav-right {
-		float: right;
-		height: 45px;
-		line-height: 45px;
-		margin-top: 20px;
-		.nav-item {
-			float: right;
-			margin-left: 15px;
-		}
-	}
-	.hotline {
-		span {
-			@include inline-block;
-			margin-top: -3px;
-		}
-		.num {
-			margin-left: 5px;
-			font-family: Arial;
-			font-size: $hotline-font-size;
-			color: $hotline-color;
-		}
-	}
-    .service {
-        a {
-            display: block;
-            width: 92px;
-            height: 27px;
-            margin-top: 10px;
-            background: image-url('header/service.png') no-repeat;
-            text-indent: -9999px;
-            overflow: hidden;
-        }
+  height: 100px;
+  background: image-url('header/bg.png') repeat-x;
+  .header-inner {
+    @include clearfix;
+    width: 950px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .logo {
+    float: left;
+    margin-top: 20px;
+    a, span {
+      @include inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
     }
+    span {
+      padding-left: 15px;
+      font-size: 20px;
+      font-family: $heading-font;
+      color: #666;
+      background: image-url('header/vline.png') no-repeat left center;
+    }
+    img {
+      display: block;
+    }
+  }
+  .nav-right {
+    float: right;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 20px;
+    .nav-item {
+      float: right;
+      margin-left: 15px;
+    }
+  }
+  .hotline {
+    span {
+      @include inline-block;
+      margin-top: -3px;
+    }
+    .num {
+      margin-left: 5px;
+      font-family: Arial;
+      font-size: $hotline-font-size;
+      color: $hotline-color;
+    }
+  }
+  .service {
+    a {
+      display: block;
+      width: 92px;
+      height: 27px;
+      margin-top: 10px;
+      background: image-url('header/service.png') no-repeat;
+      text-indent: -9999px;
+      overflow: hidden;
+    }
+  }
 }
 
 // hack for IE7
