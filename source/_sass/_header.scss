@@ -37,14 +37,15 @@
 		}
 	}
 	.hotline {
+		span {
+			@include inline-block;
+			margin-top: -3px;
+		}
 		.num {
-			font-family: $western-font;
+			margin-left: 5px;
+			font-family: Arial;
 			font-size: $hotline-font-size;
 			color: $hotline-color;
-		}
-		.num, span {
-			@include inline-block(baseline);
-			margin-top: -3px;
 		}
 	}
     .service {
@@ -58,4 +59,10 @@
             overflow: hidden;
         }
     }
+}
+
+// hack for IE7
+*+html .ui-header .hotline span {
+  margin-top: 0;
+  vertical-align: top;
 }
