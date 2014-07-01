@@ -207,7 +207,7 @@ $index-spacing: 3px;
       margin-left: 20px;
       margin-bottom: 10px;
       .bank-logo {
-        @include inline-block;
+        display: block;
         border: 1px solid #ddd;
         background-color: #fff;
         text-indent: -9999px;
