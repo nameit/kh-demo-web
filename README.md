@@ -19,9 +19,11 @@
 
 1. 将代码 `clone` 至本地：
 ```git clone git@github.com:roshanca/kh-demo-web.git```
-1. 安装 `gem`
+
+1. 安装 `gem`：
 ```bundle install```
-1. 安装 `grunt` 及其它任务模块
+
+1. 安装 `grunt` 及其它任务模块：
 ```npm install```
 
 ## 开发
