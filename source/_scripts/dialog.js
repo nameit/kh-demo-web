@@ -141,7 +141,7 @@ Dialog.prototype = {
 		}
 
 		if (this.options.tipType) {
-			content = '<p class="tip-wrap"><i class="icon-sprite icon icon-' + this.options.tipType + '-32"></i>' + this.options.message + '</p>'
+			content = '<p class="tip-wrap"><i class="icon icon-' + this.options.tipType + '-32"></i>' + this.options.message + '</p>'
 		} else {
 			content = this.options.content;
 		}

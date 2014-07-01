@@ -8,10 +8,12 @@
 @import "footer";
 
 // components
+@import "components/btn";
 @import "components/icon";
 
 // modules
 @import "modules/bank";
+@import "modules/dialog";
 
 // pages
 @import "pages/index";
