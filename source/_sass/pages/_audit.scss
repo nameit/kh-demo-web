@@ -12,6 +12,10 @@
       font-size: $h1-size;
     }
   }
+  .ret-pic {
+    margin-bottom: 20px;
+    text-align: center;
+  }
   .ret-box {
     // @extend %box;
     @extend %gutter;
