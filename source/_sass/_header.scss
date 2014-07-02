@@ -7,8 +7,16 @@
     height: 100%;
     margin: 0 auto;
   }
+  .vline {
+    @include float(right);
+    display: block;
+    height: 24px;
+    margin-top: 13px;
+    padding-left: 15px;
+    background: image-url('header/vline.png') no-repeat right center;
+  }
   .logo {
-    float: left;
+    @include float(left);
     margin-top: 20px;
     a, span {
       @include inline-block;
@@ -27,7 +35,7 @@
     }
   }
   .nav-right {
-    float: right;
+    @include float(right);
     height: 45px;
     line-height: 45px;
     margin-top: 20px;
@@ -60,6 +68,12 @@
     }
   }
   .faq {
+    a {
+      color: $link-color;
+      text-decoration: none;
+    }
+  }
+  .logout {
     a {
       color: $link-color;
       text-decoration: none;
