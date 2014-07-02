@@ -59,6 +59,12 @@
       overflow: hidden;
     }
   }
+  .faq {
+    a {
+      color: $link-color;
+      text-decoration: none;
+    }
+  }
 }
 
 // hack for IE7
