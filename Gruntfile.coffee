@@ -106,6 +106,6 @@ module.exports = (grunt) ->
         files: ['project/**']
         tasks: ['sync:project']
 
-  grunt.registerTask 'default', ['compass:site', 'jekyll:site', 'connect:site', 'watch']
-  grunt.registerTask 'dev', ['clean:site', 'sync:source', 'compass:site', 'jekyll:site', 'connect:site', 'watch']
-  grunt.registerTask 'release', ['clean:release', 'sync:release', 'cssmin:release', 'uglify:release']
+  grunt.registerTask 'build', ['compass:site', 'jekyll:site']
+  grunt.registerTask 'dev', ['clean:site', 'sync:source', 'concat:jsToDest', 'build', 'connect:site', 'watch']
+  grunt.registerTask 'release', ['clean:release', 'sync:release', 'cssmin', 'uglify']
