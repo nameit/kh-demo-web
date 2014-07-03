@@ -6,7 +6,7 @@
   border: 2px solid #11aaf7;
   overflow-x: hidden;
   overflow-y: auto;
-  @include box-shadow(#cecece 1px 1px 3px inset);
+  box-shadow: inset 1px 1px 3px #cecece;
   pre {
     padding: 15px 20px;
     white-space: pre-wrap;

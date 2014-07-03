@@ -1,0 +1,33 @@
+.ui-overlay {
+  position: fixed;
+  right: 0;
+  top: 38%;
+  z-index: 10001;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  text-align: center;
+  h3 {
+    font-size: 13px;
+    padding-left: 20px;
+    background: image-url('gif/mobile.gif') no-repeat left center;
+  }
+  .qr {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .qr-text {
+    margin-bottom: 10px;
+    color: #7d7d7d;
+  }
+  .qr-codeimg {
+    border: 1px solid #e5e5e5;
+  }
+  .download {
+    color: #6898cb;
+    text-decoration: none;
+  }
+}

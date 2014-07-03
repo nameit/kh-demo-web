@@ -70,3 +70,15 @@ $send-gradient-end:    #fff1c1 !default;
 
 $login-tip-color:   #858d94 !default;
 $require-color:     #fe2020 !default;
+
+// Mixin================================================================================================
+@mixin inline-block($alignment: middle) {
+  display: inline-block;
+  @if $alignment and $alignment != none {
+    vertical-align: $alignment;
+  }
+  zoom: 1;
+  *+html & {
+    display: inline;
+  }
+}

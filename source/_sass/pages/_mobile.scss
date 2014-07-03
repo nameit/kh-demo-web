@@ -3,7 +3,7 @@ $misc-spacing: 3px;
 @import "sprite/misc/*.png";
 @include all-misc-sprites;
 
-.page-client {
+.page-mobile {
   background-color: #fff;
   .banner {
     position: relative;
@@ -52,6 +52,7 @@ $misc-spacing: 3px;
   .col {
     @include pie-clearfix;
     border-bottom: 1px solid #7f7f7f;
+    overflow: hidden;
     .l {
       @include float(left);
       padding-left: 50px;

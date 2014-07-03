@@ -92,3 +92,56 @@ function checkHighlight() {
 
 	return checkResult;
 }
+
+/**
+ * 发送信息事件绑定
+ */
+$('#messageSender').on('click', sendMsg);
+
+/**
+ * 发送信息方法
+ * @return undefined
+ */
+function sendMsg() {
+	var messageContent = document.getElementById('messageContent'),
+		value = $.trim(messageContent.value),
+		date = new Date(),
+		hour = date.getHours(),
+		minute = date.getMinutes(),
+		template = '<div class="dialogue">' +
+					'<span class="talker">我：</span>' +
+					'<span class="message">' + messageContent.value + '<span class="timestamp">(' + hour + ':' + minute + ')</span></span>' +
+				   '</div>';
+
+	if (value) {
+		$('.chat-dialogue').append(template);
+		$('.chat-dialogue').scrollTop($('.chat-dialogue')[0].scrollHeight);
+		messageContent.value = '';
+		messageContent.focus();
+	} else {
+		new Dialog(null, {
+			tipType: 'warn',
+			message: '请先说点什么',
+			needDestroy: true,
+			afterHide: function () {
+				messageContent.focus();
+			}
+		});
+	}
+}
+
+/**
+ * 回车发送信息
+ * @param  {object} e event
+ * @return undefined
+ */
+$(document).on('keydown', function (e) {
+	var messageContent = document.getElementById('messageContent');
+
+	if (e.keyCode === 13) { // Enter
+		if (messageContent === document.activeElement) { // focus
+			sendMsg(); // 发送信息
+			e.preventDefault();
+		}
+	}
+});

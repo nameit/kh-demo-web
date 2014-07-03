@@ -10,7 +10,7 @@
     <link rel="stylesheet" media="screen" href="{{site.baseurl}}/css/index.css">
 </head>
 </head>
-	<body{% if page.class %} class="page-{{ page.class }}"{% endif %}>
+	<body class="page-index">
 		<!-- header -->
 		{% include header.liquid %}
 
@@ -23,4 +23,14 @@
 		<!-- load scripts -->
 		{% include scripts.liquid %}
 	</body>
+
+	<!-- overlay -->
+	<div class="ui-overlay">
+		<h3>手机开户</h3>
+		<div class="qr">
+			<p class="qr-text">扫描二维码</p>
+			<img class="qr-codeimg" src="{{ site.baseurl }}/images/qrcode/ctsec.png" width="66" height="66" alt="">
+		</div>
+		<a class="download" href="{{ site.baseurl }}/mobile.html">下载客户端</a>
+	</div>
 </html>

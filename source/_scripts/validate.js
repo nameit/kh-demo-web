@@ -136,7 +136,11 @@ Validator.prototype = {
         $(el).data('tiped', true);
 
         if (typeof Object.create === 'undefined') {
-            $(tip).css('font-size', '12px');
+            $(tip).css({
+            	'font-size': '12px',
+            	'margin-left': '10px',
+            	'vertical-align': 'middle'
+            });
         }
 
         return tip;
@@ -151,7 +155,7 @@ Validator.prototype = {
         };
 
         // this.tiper = $(el).data('tiped') ?
-        //     $(el.parentNode).find('.js-valid-tip')[0] : 
+        //     $(el.parentNode).find('.js-valid-tip')[0] :
         //     this.initTip(el);
 
         if ($(el).data('tiped')) {
