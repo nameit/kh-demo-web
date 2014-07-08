@@ -1,7 +1,7 @@
 {
 	"name": "kh-demo-web",
 	"version": "1.0.0",
-  "project": "ctsec",
+  "project": "cf",
   "description": "Online account opening system for investors",
   "author": {
     "name": "wuwj",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/roshanca/kh-demo-web"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
