@@ -192,3 +192,23 @@ function closeError(callback) {
     // 回调方法
     callback && callback();
 }
+
+
+$('#switcher').on('click', switchType);
+
+function switchType() {
+	target = $(this).data('target');
+	$('.login-panel').hide();
+	$('.login-head h2').hide();
+	if ($(this).hasClass('qrcode')) {
+		$(this).removeClass('qrcode');
+		$(this).addClass(target);
+		$('#panel-pc').show();
+		$('.login-head').find('.head-' + target).show();
+	} else {
+		$(this).removeClass(target);
+		$(this).addClass('qrcode');
+		$('#panel-qrcode').show();
+		$('.login-head h2:first').show();
+	}
+}

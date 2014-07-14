@@ -46,6 +46,35 @@ $index-spacing: 3px;
   top: 50px;
   right: 0;
   background-color: #fbfbfb;
+  .conner-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .qrcode {
+    background-image: image-url('body/conner-qrcode.png');
+  }
+  .pc {
+    background-image: image-url('body/conner-pc.png');
+  }
+  .login-head {
+    height: 48px;
+    h2 {
+      padding-top: 20px;
+      font-family: $heading-font;
+      font-size: 22px;
+      text-indent: 38px;
+    }
+    .head-pc {
+      text-align: center;
+      text-indent: 0;
+    }
+  }
   .login-tab {
     font-size: 0;
     .tab {
@@ -60,6 +89,8 @@ $index-spacing: 3px;
     .tab-zh-active { @include index-sprite(tab-zh-active); }
   }
   .login-panel {
+    width: 262px;
+    height: 200px;
     padding: 25px 38px 15px;
     background-color: #fff;
     .input-group {
@@ -120,6 +151,17 @@ $index-spacing: 3px;
       margin-top: 10px;
       font-size: $small-font-size;
       color: $login-tip-color;
+      &.right {
+        padding-right: 5px;
+        text-align: right;
+      }
+      a {
+        color: $login-tip-color;
+        text-decoration: none;
+      }
+      span {
+        padding: 0 5px;
+      }
     }
   }
 }
@@ -227,6 +269,18 @@ $index-spacing: 3px;
     li {
       line-height: 22px;
       font-size: $small-font-size;
+    }
+  }
+}
+
+.qrdownload {
+  text-align: center;
+  p {
+    padding-top: 10px;
+    a {
+      font-size: 12px;
+      color: #6898cb;
+      text-decoration: none;
     }
   }
 }

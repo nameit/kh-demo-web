@@ -11,57 +11,14 @@ title: 网上开户首页
 	<div id="login">
 		<div class="opacity"></div>
 		<!-- login mod -->
-		<div class="ui-login">
-			<div class="login-tab">
-				<span class="tab tab-kh-active"></span>
-				<span class="tab tab-zh"></span>
-			</div>
-			<div class="login-panel">
-				<div class="input-group">
-					<label>
-						<i class="icon mobile-kh"></i>
-						<input type="text" class="input mobile" placeholder="您的手机号">
-					</label>
-				</div>
-				<div class="input-group">
-					<label>
-						<i class="icon code-kh"></i>
-						<input type="text" class="input input-code code" placeholder="短信验证码">
-					</label>
-					<span class="getcode">获取验证码</span>
-				</div>
-				<a href="#" class="btn btn-kh">马上开户</a>
-				<!-- <p class="tip">
-					用已验证手机可以继续转户或查询转户状态
-				</p> -->
-				<p class="tip right">
-					<a href="#">预约开户</a><span>|</span><a href="#">开产品户</a>
-				</p>
-			</div>
-			<div class="login-panel" style="display: none;">
-				<div class="input-group">
-					<label>
-						<i class="icon mobile-zh"></i>
-						<input type="text" class="input mobile" placeholder="您的手机号">
-					</label>
-				</div>
-				<div class="input-group">
-					<label>
-						<i class="icon code-zh"></i>
-						<input type="text" class="input input-code code" placeholder="短信验证码">
-					</label>
-					<span class="getcode">获取验证码</span>
-				</div>
-				<a href="#" class="btn btn-zh">马上开户</a>
-			</div>
-		</div>
-
 		<!-- 开产品户 -->
-		<!-- <div class="ui-login">
+		<div class="ui-login">
+			<div class="conner-link qrcode" id="switcher" data-target="pc"></div>
 			<div class="login-head">
 				<h2>开产品户</h2>
+				<h2 class="head-pc" style="display: none;">下载客户端</h2>
 			</div>
-			<div class="login-panel">
+			<div class="login-panel" id="panel-qrcode">
 				<div class="input-group">
 					<label>
 						<i class="icon mobile-kh"></i>
@@ -76,11 +33,17 @@ title: 网上开户首页
 					<span class="getcode">获取验证码</span>
 				</div>
 				<a href="#" class="btn btn-kh">马上开户</a>
-				<p class="tip">
-					用已验证手机可以继续转户或查询转户状态
+				<p class="tip right">
+					<a href="#">开股东户</a><span>|</span><a href="#">转股东户</a>
 				</p>
 			</div>
-		</div> -->
+			<div class="login-panel" id="panel-pc" style="display: none;">
+				<div class="qrdownload">
+					<img src="{{ site.baseurl }}/images/qrcode/ctsec-big.png" width="157" height="157" alt="二维码">
+					<p><a href="#">更多下载方式</a></p>
+				</div>
+			</div>
+		</div>
 
 		<!-- loginerror overlay -->
 		<div class="ui-loginerr" style="display: none;">
