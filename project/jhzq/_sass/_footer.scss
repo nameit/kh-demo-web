@@ -1,0 +1,43 @@
+.ui-footer {
+	margin: 60px auto 0;
+	padding: 30px 0;
+	text-align: center;
+	font-size: 12px;
+	color: #8c8c8c;
+	background-color: #fff;
+  .footextra {
+    @include pie-clearfix;
+    width: 760px;
+    padding-bottom: 20px;
+    margin: 0 auto 20px;
+    border-bottom: 1px dotted #dedede;
+    .extra {
+      @include float(left);
+      margin-left: 60px;
+      &.first {
+        margin-left: 0;
+      }
+    }
+  }
+	.footnav {
+		margin-bottom: 5px;
+		a {
+			text-decoration: none;
+			color: #8c8c8c;
+		}
+	}
+	p {
+		margin-bottom: 6px;
+		a {
+			text-decoration: none;
+			color: #8c8c8c;
+		}
+	}
+	.divider {
+		padding: 0 4px
+	}
+	p.bottom img{
+		vertical-align: middle;
+		padding-left: 10px
+	}
+}

@@ -1,0 +1,7 @@
+project: 江海证券
+safe: false
+source: site
+destination: _site
+baseurl: ''
+url: ''
+exclude: ['config.rb']

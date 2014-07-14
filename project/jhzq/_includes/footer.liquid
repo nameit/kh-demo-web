@@ -1,0 +1,31 @@
+<div class="ui-footer">
+	<div class="footextra">
+		<div class="extra first">
+			<a href="http://www.jhzq.com.cn/e_download1.jsp" target="_blank"><img src="{{ site.baseurl }}/images/footer/dianjing.png" alt="点睛平台"></a>
+			<p>点睛平台</p>
+		</div>
+		<div class="extra">
+			<a href="http://www.jhzq.com.cn/e_download1.jsp" target="_blank"><img src="{{ site.baseurl }}/images/footer/online-trade.png" alt="网上交易软件"></a>
+			<p>网上交易软件</p>
+		</div>
+		<div class="extra">
+			<img src="{{ site.baseurl }}/images/footer/weixin-service.png" alt="官方微信服务号">
+			<p>官方微信服务号</p>
+		</div>
+		<div class="extra">
+			<img src="{{ site.baseurl }}/images/footer/weixin-subscibe.png" alt="官方微信订阅号">
+			<p>官方微信订阅号</p>
+		</div>
+		<div class="extra">
+			<img src="{{ site.baseurl }}/images/footer/yixin-subscibe.png" alt="官方易订阅号">
+			<p>官方易订阅号</p>
+		</div>
+	</div>
+	<div class="footnav">
+		{% for footnav in site.data.footnavs %}
+			<a target="_blank" href="{{ footnav.url }}">{{ footnav.name }}</a>
+			{% unless forloop.last %}<span class="divider">|</span>{% endunless %}
+		{% endfor %}
+	</div>
+	<p>©2014 {{ site.project }}股份有限责任公司版权所有</p>
+</div>
