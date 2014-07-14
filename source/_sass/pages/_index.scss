@@ -203,6 +203,7 @@ $index-spacing: 3px;
 
 .ui-prepare {
   @include float(left);
+  width: 695px;
   padding-right: 55px;
   .prepare-items {
     @include pie-clearfix;
